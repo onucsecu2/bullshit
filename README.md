@@ -1,7 +1,7 @@
 
 # IPC Network for Vjudge!
 Using BIND in Linux we will make a private DNS server to give access to limited websites.Here this BIND settings is only for giving access to [vjudge.net](https://vjudge.net/) for arranging Internal Programming Contest in a network.
-
+**uva Problemset cant be seen. These problem set is needed to be printed out.But solution can be Submitted and no problem is seen on verdict.**
 ### SETTING
 - install "bind9" in your Linux Machine.
    ```sh
@@ -18,7 +18,7 @@ Using BIND in Linux we will make a private DNS server to give access to limited 
    ```sh
     $ifconfig
    ```
-  **It's recommended to set a fixed ip address for that machine in the router.There are a setting called "fixed ip address set" somewhere in the router**
+  **It's recommended to set a reserve address for that machine in the router.There are a setting called "Address Reservation" somewhere in the router LAN setup. Reserve the machine MAC address to 192.168.1.2 is recommended**
 -  [/etc]() hosts =>  Do commenting to the host 127.0.1.1 server and set up like the given hosts
 -  [/etc]() resolv.conf => Do comment the nameserver
 -  [/etc/bind]() named.conf.options => setup like here
