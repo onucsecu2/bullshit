@@ -8,11 +8,11 @@ Using BIND in Linux we will make a private DNS server to give access to limited 
    $ sudo apt-get install bind*
    ```
 - Backup following files of the machine 
-    /etc  hosts
-    /etc  hostname
-    /etc resolv.conf
-    /etc/bind named.conf.options
-    /etc/bind named.conf.local
+    >/etc  hosts<br />
+    >/etc  hostname<br />
+    >/etc resolv.conf<br />
+    >/etc/bind named.conf.options<br />
+    >/etc/bind named.conf.local<br />
     
 - see your machine inet address (mine was 192.168.1.2).
    ```sh
@@ -23,7 +23,7 @@ Using BIND in Linux we will make a private DNS server to give access to limited 
 -  resolv.conf => Do comment the nameserver
 -  named.conf.options => setup like here
 -  named.conf.local => copy paste it
--  download and paste "zone" folder and place it to [/etc/bind/]
+-  download and paste "zone" folder and place it to /etc/bind/
 -  ```sh
    $ sudo service bind9 start
    ```
