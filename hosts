@@ -1,0 +1,15 @@
+127.0.0.1	localhost
+#127.0.1.1	onu-HP-Notebook
+192.168.1.2 ns1.vjudge.net  ns1
+8.8.8.8     ns2.dns2.com    ns2
+8.8.4.4     ns3.dns3.com    ns3
+8.8.8.8     ns4.dns4.org    ns4
+8.8.4.4     ns5.dns5.org    ns5
+8.8.8.8     ns6.dns6.cn     ns6
+8.8.4.4     ns7.dns7.cn     ns7
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters

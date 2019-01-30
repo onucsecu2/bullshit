@@ -1,0 +1,18 @@
+;
+; BIND reverse data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	vjudge.net. admin.example.net. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+; Name servers
+        IN      NS      ns1.vjudge.net.
+        IN      NS      onu-HP-Notebook.
+; PTR records
+1       IN      PTR      ns1.vjudge.net.
+2       IN      PTR      onu-HP-Notebook
+3       IN      PTR      www.vjudge.net

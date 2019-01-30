@@ -1,0 +1,23 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns6.dns6.cn. admin.example.cn. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+; Name servers
+vj.e949.cn.    IN      NS      ns6
+vj.e949.cn.    IN      NS      ns7
+vj.e949.cn.    IN      NS      onu-HP-Notebook
+; A records for name servers
+ns6             IN      A       8.8.8.8
+ns7             IN      A       8.8.4.4
+
+; Other A records
+@               IN      A       213.244.178.209
+www             IN      A       213.244.178.209
+

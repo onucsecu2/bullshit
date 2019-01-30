@@ -1,0 +1,31 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+zone "vj.e949.cn" {
+    type master;
+    file "/etc/bind/zones/db.vj.e949.cn";
+    //allow-transfer { 127.0.1.1; };
+};
+zone "vjudge.net" {
+    type master;
+    file "/etc/bind/zones/db.vjudge.net";
+    //allow-transfer { 127.0.1.1; };
+};
+zone "codeforces.com" {
+    type master;
+    file "/etc/bind/zones/db.codeforces.com";
+    //allow-transfer { 127.0.1.1; };
+};
+zone "uva.onlinejudge.org" {
+    type master;
+    file "/etc/bind/zones/db.uva.onlinejudge.org";
+    //allow-transfer { 127.0.1.1; };
+};
+zone "1.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/zones/db.192.168.1";
+};

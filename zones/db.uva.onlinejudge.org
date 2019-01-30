@@ -1,0 +1,20 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns4.dns4.org. admin.example.org. (
+			      4		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+; Name servers
+uva.onlinejudge.org.    IN      NS      ns4
+uva.onlinejudge.org.    IN      NS      ns5
+; A records for name servers
+ns4            IN      A       8.8.8.8
+ns5            IN      A       8.8.4.4
+; Other A records
+@               IN      A       51.255.0.192     
+www             IN      A       51.255.0.192

@@ -1,0 +1,21 @@
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	ns1.vjudge.net. admin.example.net. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+; Name servers
+vjudge.net.    IN      NS      ns2
+vjudge.net.    IN      NS      ns3
+; A records for name servers
+ns2             IN      A       8.8.8.8
+ns3             IN      A       8.8.4.4
+; Other A records
+@               IN      A       139.162.66.202
+www             IN      A       139.162.66.202
+
