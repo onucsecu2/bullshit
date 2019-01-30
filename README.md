@@ -45,6 +45,5 @@ login to router and set primary DNS to the innet address of the machine (here mi
    -  [/etc]() hosts => uncomment 127.0.1.1
    -  [/etc]() resolv.conf => uncomment that change
    -   ```sh
-       $ sudo service bind9 stop
-      ```
+       $ sudo service bind9 stop```
    -  Login to your router and change the DNS server to previous one and unblock the port tcp/udp 53
