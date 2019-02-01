@@ -35,10 +35,10 @@ Using BIND in Linux we will make a private DNS server to give access to limited 
   ```sh
   $ sudo tail -f /var/log/syslog
   ```
--**You must note down the DNS servers (primary and secondary) which will be needed later. Normally it is 8.8.8.8 and 8.8.4.4 is given which is google's DNS server** 
+-  **You must note down the DNS servers (primary and secondary) which will be needed later. Normally it is 8.8.8.8 and 8.8.4.4 is given which is google's DNS server** 
 login to router and set primary DNS to the innet address of the machine (here mine was 192.168.1.2) and as i didnt setup secondary DNS (its not good idea though work) so keep it 192.168.55.55 as random
 
-- block service of udp/tcp for 53 in the router. This setting lies in somewhere in the router (I found it on advance>security>block services in Netgear router).
+- block service of udp/tcp for port 53 in the router. This setting lies in somewhere in the router (I found it on advance>security>block services in Netgear router).
 >If you Dont block it, the DNS will not work for android phones as all sites will be accessible from android phones
 
 ### Revert The Network Settings
